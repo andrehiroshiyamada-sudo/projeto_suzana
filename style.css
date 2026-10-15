@@ -1,0 +1,116 @@
+/* zera as margens */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #f5f8fa;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: #1f3a5f;
+}
+
+h2, h3 { margin: 12px 0; }
+p, ul, table { margin-bottom: 12px; }
+ul { padding-left: 24px; }
+
+/* link sem sublinhado */
+a {
+  color: #2f6f8f;
+  text-decoration: none;
+}
+
+/* topo: tudo em coluna e centralizado */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #1f3a5f;
+  color: white;
+}
+
+header h1 { color: white; }
+
+/* cada parte em uma coluna, uma embaixo da outra */
+section {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+aside {
+  padding: 12px;
+  background-color: #dce9f2;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #aaaaaa;
+  text-align: left;
+}
+
+th {
+  background-color: #1f3a5f;
+  color: white;
+}
+
+/* formulario */
+#formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #aaaaaa;
+}
+
+label { margin-top: 10px; }
+input { padding: 6px; font-size: 16px; }
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 4px;
+  font-size: 16px;
+  background-color: #1f3a5f;
+  color: white;
+}
+
+/* resultado */
+#resultado { margin-top: 16px; }
+
+.cartao {
+  padding: 16px;
+  color: black;
+}
+
+.verde { background-color: #cfe8d3; }
+.amarelo { background-color: #fbf1d6; }
+.vermelho { background-color: #f6cccc; }
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #1f3a5f;
+  color: white;
+}

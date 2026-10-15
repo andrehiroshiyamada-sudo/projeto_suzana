@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Mente em Dia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mente em Dia</h1>
+    <p>Cuidar da mente tambem e cuidar da saude.</p>
+  </header>
+
+  <section>
+    <article>
+      <h2>Vamos falar sobre saude mental?</h2>
+      <img src="foto.png" width="450" height="300" alt="Silhueta de cabeca com carinhas tristes">
+      <p>Todo mundo tem dias dificeis. Quando a tristeza ou a ansiedade atrapalham o sono e os estudos, e hora de pedir ajuda.</p>
+      <h3>Pequenos cuidados</h3>
+      <ul>
+        <li>Dormir bem.</li>
+        <li>Conversar com alguem de confianca.</li>
+        <li>Fazer pausas.</li>
+      </ul>
+    </article>
+
+    <aside>
+      <h3>Para pensar</h3>
+      <p>A <abbr title="Organizacao Mundial da Saude">OMS</abbr> diz que saude mental e parte da saude. Como muita gente fala: <q>pedir ajuda e coragem</q>.</p>
+      <p>Fonte: <cite>Organizacao Mundial da Saude</cite></p>
+      <p><a href="https://www.gov.br/saude" target="_blank">Site do Ministerio da Saude</a></p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Onde pedir ajuda</h2>
+    <table>
+      <tr>
+        <th>Servico</th>
+        <th>Contato</th>
+      </tr>
+      <tr>
+        <td>CVV</td>
+        <td>Ligue 188 (24 horas)</td>
+      </tr>
+      <tr>
+        <td>SAMU</td>
+        <td>Ligue 192</td>
+      </tr>
+      <tr>
+        <td>CAPS</td>
+        <td>Unidade mais proxima de casa</td>
+      </tr>
+    </table>
+
+    <h3>Mapa de Belem</h3>
+    <iframe title="Mapa de Belem" width="100%" height="300"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-48.52%2C-1.47%2C-48.44%2C-1.42&amp;layer=mapnik"></iframe>
+  </section>
+
+  <section>
+    <h2>Teste rapido</h2>
+    <p>Isto nao e um diagnostico, e so para voce pensar em como esta.</p>
+
+    <form id="formulario" onsubmit="calcular(event)" onreset="limpar()">
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="voce@exemplo.com" required>
+
+      <label for="sono">Horas de sono por noite</label>
+      <input type="number" id="sono" placeholder="Ex.: 6" required>
+
+      <label for="humor">Como voce esta se sentindo? (0 a 10)</label>
+      <input type="number" id="humor" min="0" max="10" placeholder="Ex.: 7" required>
+
+      <div>
+        <input type="checkbox" id="conversou">
+        <label for="conversou">Conversei com alguem esta semana</label>
+      </div>
+
+      <div class="botoes">
+        <button type="submit">Ver resultado</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+
+    <div id="resultado"></div>
+  </section>
+
+  <footer>
+    <p>Projeto de Laboratorio de Desenvolvimento Web.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
